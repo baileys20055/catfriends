@@ -24,7 +24,6 @@ export default function Home() {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => {
         if (response.ok) {
-          console.log('Fetched Data');
           return response.json();
         }
         setCats(cats);
