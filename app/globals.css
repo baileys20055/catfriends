@@ -17,12 +17,13 @@ body {
   font-family: 'SEGA LOGO FONT';
   font-style: normal;
   font-weight: normal;
-  src: local('SEGA LOGO FONT'), url('./assets/SEGA.woff') format('woff');
-  }
+  src:
+    local('SEGA LOGO FONT'),
+    url('./assets/SEGA.woff') format('woff');
+}
 
-  h1 {
-    font-family: 'SEGA LOGO FONT';
-    font-weight: 200;
-    color: #0ccac4;
-  }
-https://jsonplaceholder.typicode.com/
+h1 {
+  font-family: 'SEGA LOGO FONT';
+  font-weight: 200;
+  color: #0ccac4;
+}
