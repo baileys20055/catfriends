@@ -19,7 +19,7 @@ body {
   font-weight: normal;
   src:
     local('SEGA LOGO FONT'),
-    url('./assets/SEGA.woff') format('woff');
+    url('/assets/SEGA.woff') format('woff');
 }
 
 h1 {
