@@ -1,7 +1,7 @@
 'use client';
-import CardList from '@/Components/CardList';
-import { cats, Cat } from '@/Components/Cats';
-import SearchBox from '@/Components/SearchBox';
+import CardList from '@/components/CardList';
+import { cats, Cat } from '@/components/Cats';
+import SearchBox from '@/components/SearchBox';
 import { useState, useEffect } from 'react';
 
 export default function Home() {

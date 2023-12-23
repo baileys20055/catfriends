@@ -1,6 +1,6 @@
 import React from 'react';
 import { Cat } from './Cats';
-import Card from '@/Components/Card';
+import Card from '@/components/Card';
 
 type Props = { cats: Cat[] };
 
