@@ -3,14 +3,18 @@ import CardList from '@/components/CardList';
 import { cats, Cat } from '@/components/Cats';
 import SearchBox from '@/components/SearchBox';
 import { useState, useEffect } from 'react';
+import { useDebouncedCallback } from 'use-debounce';
 
 export default function Home() {
   const [catList, setCats] = useState<Array<Cat>>([]);
   const [searchField, setSearchField] = useState<string>('');
 
-  const onSearchChange = (event: any): void => {
+  // Debounced Callback ensures our user has stopped typing prior
+  // to searching for cat names.
+  const onSearchChange = useDebouncedCallback((event: any): void => {
+    console.log(event.target.value)
     setSearchField(event.target.value);
-  };
+  }, 600);
 
   const filteredCats = catList.filter((cat: Cat) => {
     if (cat.name.length > 20 || cat.email.length > 22) {
